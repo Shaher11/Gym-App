@@ -7,6 +7,7 @@
         <title>{{ config('app.name')}}</title>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     </head>
     <body class="antialiased">
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen">
