@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('scheduled_class_id')->constrained();
+
+            $table->unique(['user_id', 'scheduled_class_id']);
+            $table->timestamps();
         });
     }
 
